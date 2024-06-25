@@ -1,8 +1,8 @@
 # News Homepage
 
-## This repository contains the implementation of the "News Homepage" challenge from Frontend Mentor. The project is built using React TailwindCSS and  Mantine, a modern React component library
+## This repository contains the implementation of the "News Homepage" challenge from Frontend Mentor. The project is built using React TailwindCSS and Mantine, a modern React component library
 
- Users should be able to:
+Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
