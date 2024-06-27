@@ -1,14 +1,17 @@
-import { Box, MantineProvider } from "@mantine/core";
+import { Container, MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
+import HeaderNavBar from "./components/layouts/HeaderNavBar";
+import { Body } from "./components/Body";
+import Gadgets from "./components/layouts/Gadgets";
 
 const App = () => {
   return (
     <MantineProvider withGlobalStyles withNormalCSS>
-      <div>
-        <Box c="blue" className="text-center text-4xl mt-6">
-          News Homepage
-        </Box>
-      </div>
+        <Container size="lg">
+         <HeaderNavBar />
+         <Body />
+         <Gadgets />
+        </Container>
     </MantineProvider>
   );
 };

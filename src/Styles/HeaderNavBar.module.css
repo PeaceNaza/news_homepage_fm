@@ -1,0 +1,17 @@
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.secondaryLink {
+  color:  hsl(236, 13%, 42%);
+ 
+} 
+
+.secondaryLink:hover {
+  color:  hsl(5, 85%, 63%);
+  text-decoration-line: none;
+  
+}
