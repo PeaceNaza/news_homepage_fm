@@ -28,21 +28,21 @@ export const Body = () => {
           <Title fw={700} c="hsl(240, 100%, 5%)" className='text-6xl'>The Bright Future of Web 3.0?</Title>
           </Grid.Col>
           <Grid.Col span={6}><Text size='sm' className='leading-6 tracking-wider'>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise? </Text>
-          <Button w={190} h={35} mt={30} color=" hsl(5, 85%, 63%)" c="hsl(240, 100%, 5%)" size="xs" radius="0" className='tracking-[4px] hover:text-[white] hover:bg-[hsl(5, 85%, 63%)]' >READ MORE</Button>
+          <button className='tracking-[4px] w-[186px] h-10 mt-8 bg-[#F15E50] text-[#00001A] font-extrabold hover:text-[white] hover:bg-[#00001A] text-xs' >READ MORE</button>
           
           </Grid.Col>
         </Grid>
         </Grid.Col>
         
         <Grid.Col span={3.6} bg="hsl(240, 100%, 5%)" px={20} mt={20} mb={35}>
-           <Title c="hsl(35, 77%, 62%)">
+           <Title c="#E9AB53">
             New
            </Title>
             
               {textContent.map((item, index) => (
                 <Box key={index}>
-                  <Title size="20px" fw={700} c="#fffdfa" mt={15} className='leading-10 hover:text-[hsl(35, 77%, 62%)]'>{item.title}</Title>
-                  <Text fw={400} size='sm' c="#87879c" mb={28} className='leading-6'>{item.body}</Text>
+                  <Title size="20px" fw={700} mt={15} className='leading-10 text-[#fffdfa] hover:text-[#E9AB53] cursor-pointer'>{item.title}</Title>
+                  <Text fw={400} size='sm' c="#87879c" mb={28} className='leading-6 '>{item.body}</Text>
                   { index !== textContent.length -1 && <hr className='opacity-35'/>}
                 </Box>
               ))}
