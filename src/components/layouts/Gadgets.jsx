@@ -1,60 +1,52 @@
-import { Grid, Title, Image, Text } from '@mantine/core';
-import laptop from "../../assets/images/image-top-laptops.jpg"
-import retro from "../../assets/images/image-retro-pcs.jpg"
-import game from "../../assets/images/image-gaming-growth.jpg"
+import { Grid, Title, Image, Text } from "@mantine/core";
+import laptop from "../../assets/images/image-top-laptops.jpg";
+import retro from "../../assets/images/image-retro-pcs.jpg";
+import game from "../../assets/images/image-gaming-growth.jpg";
 
 const Gadgets = () => {
   const gadgetsContent = [
     {
-      image: <Image src={retro} alt='retro-pcs' />,
-      num : "01",
+      image: <Image src={retro} alt="retro-pcs" />,
+      num: "01",
       title: "Reviving Retro PCs",
       text: "What happens when old PCs are given modern upgrades? ",
-    }, 
+    },
     {
-      image: <Image src={laptop} alt='top-laptops' />,
-      num : "02",
+      image: <Image src={laptop} alt="top-laptops" />,
+      num: "02",
       title: "Top 10 Laptops of 2022",
       text: "Our best picks for various needs and budgets.",
     },
     {
-      image: <Image src={game} alt='gaming-growth' />,
-      num : "03",
+      image: <Image src={game} alt="gaming-growth" />,
+      num: "03",
       title: "The Growth of Gaming",
       text: "How the pandemic has sparked fresh opportunities.",
-    }
-  ]
+    },
+  ];
 
   return (
-    
-    <Grid span={12}> 
-        {gadgetsContent.map((content, index) => (   
-          <Grid.Col key={index} span={4}>
-          <Grid>
-
-            <Grid.Col span={4}>
-              {content.image},
+    <Grid span={12} ml="md">
+      {gadgetsContent.map((content, index) => (
+        <Grid.Col key={index} span={{ md: 4, xs: 9 }}>
+          <Grid gutter={20}>
+            <Grid.Col span={{ md: 6, lg: 3.5, xs: 2.7 }}>{content.image}</Grid.Col>
+            <Grid.Col span={{ md: 7, xs: 5.5 }}>
+              <Title fw={700} size={25} c="#F15E50" className="leading-6">
+                {content.num}
+              </Title>
+              <Text fw={800} c="#00001A" className="leading-10 mt-1">
+                {content.title}
+              </Text>
+              <Text size="sm" className="leading-6">
+                {content.text}
+              </Text>
             </Grid.Col>
-            <Grid.Col span={7}>
-             <Title>{content.num}</Title> 
-             <Text fw={700} className='leading-6'>{content.title}</Text> 
-             <Text size='sm'>{content.text}</Text> 
-            
-            </Grid.Col>
+          </Grid>
+        </Grid.Col>
+      ))}
+    </Grid>
+  );
+};
 
-            
-
-            </Grid>
-            </Grid.Col>
-         
-        ))}
-            
-            
-           
-            </Grid>
-     
-    
-  )
-}
-
-export default Gadgets
+export default Gadgets;

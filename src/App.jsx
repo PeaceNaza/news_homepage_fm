@@ -5,13 +5,23 @@ import { Body } from "./components/Body";
 import Gadgets from "./components/layouts/Gadgets";
 
 const App = () => {
+  const customTheme = {
+    breakpoints: {
+      xs: 320,
+      sm: 576,
+      md: 768,
+      lg: 992,
+      xl: 1200,
+    },
+  };
+
   return (
     <MantineProvider withGlobalStyles withNormalCSS>
-        <Container size="lg">
-         <HeaderNavBar />
-         <Body />
-         <Gadgets />
-        </Container>
+      <Container fluid className="px-5 pb-20 md:px-20">
+        <HeaderNavBar />
+        <Body />
+        <Gadgets />
+      </Container>
     </MantineProvider>
   );
 };
