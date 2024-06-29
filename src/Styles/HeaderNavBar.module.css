@@ -1,7 +1,10 @@
 .inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0.5rem;
+
+  
 }
 
 .secondaryLink {
@@ -12,3 +15,4 @@
   color: hsl(5, 85%, 63%);
   text-decoration-line: none;
 }
+
