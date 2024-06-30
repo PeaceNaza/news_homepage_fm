@@ -51,15 +51,18 @@ const HeaderNavBar = () => {
       <Image src={opened ? xIcom : burger}
       onClick={toggle}
       style={{cursor: "pointer", position: "absolute", right: 20, top: 40, zIndex: 20, display: "block", width: 45, height: 20}}
+    
       /> 
-      
-      {opened && (
+       
+      {opened ?  (
       <Grid>
-          <Image src={xIcom} style={{cursor: "pointer", position: "absolute", right: 20, top: 40, zIndex: 20, display: "block", width: 45, height: 20}} />
-      <Overlay opacity={0.5} style={{position: "fixed", top: 0, left: 0, right: 0, width: '100%', height: '100%', display: "flex", alignItems: "", justifyContent: "center"}}> 
+          <Image src={xIcom} style={{cursor: "pointer", position: "absolute", right: 20, top: 40, zIndex: 20, display: "block", width: 45, height: 20}}
+          
+           />
+      <Overlay style={{position: "fixed", top: 0, left: 0, right: 0, width: '100%', height: '100%', display: "flex", alignItems: "", justifyContent: "center"}}> 
       
         <Box
-        style={{display: "flex", flexDirection: "column", alignItems: "flex-start", justifyContent: "center", background: "white", zIndex: 20, padding: 20, borderRadius: "10px"}}
+        style={{display: "flex", flexDirection: "column", alignItems: "flex-start", justifyContent: "center", background: "white", zIndex: 20, padding: 20, width: "50vw" , borderRadius: "10px"}}
         >
           <Text>
             {primaryItems}
@@ -69,7 +72,7 @@ const HeaderNavBar = () => {
       </Grid>
       
       
-      )}
+      ) : null}
       </>
       
     </Container>
