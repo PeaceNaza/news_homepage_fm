@@ -10,5 +10,6 @@ body {
   font-size: 15px;
   background-color: hsl(36, 100%, 99%);
   color: hsl(236, 13%, 42%);
-  min-width: 375px;
+  position: relative;
+
 }

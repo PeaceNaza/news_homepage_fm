@@ -28,7 +28,7 @@ export const Body = () => {
               The Bright Future of Web 3.0?
             </Title>
           </Grid.Col>
-          <Grid.Col span={{ base: 13, md: 6, xs: 8}}>
+          <Grid.Col span={{ base: 12, md: 6, xs: 10}}>
             <Text size="sm" fw={500} className="leading-6 tracking-wider">
               We dive into the next evolution of the web that claims to put the power of the
               platforms back into the hands of the people. But is it really fulfilling its promise?{" "}
@@ -40,7 +40,7 @@ export const Body = () => {
         </Grid>
       </Grid.Col>
 
-      <Grid.Col span={3.5} bg="hsl(240, 100%, 5%)" mx={{base: 15 , md: 2}} px={20} mt={20} mb={35}>
+      <Grid.Col span={3.5} bg="hsl(240, 100%, 5%)" mx={{base: 17 , md: 2}} px={20} mt={20} mb={35}>
         <Title c="#E9AB53">New</Title>
 
         {textContent.map((item, index) => (
