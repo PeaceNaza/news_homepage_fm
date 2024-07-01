@@ -23,13 +23,13 @@ export const Body = () => {
         <Image src={web} alt="web-3 desktop" className="md:block xs:hidden" />
         <Image src={webMobile} alt="web-3 mobile" className="md:hidden" />
         <Grid mt={30}>
-          <Grid.Col span={{ base: 10, md: 6, xs: 9 }}>
-            <Title fw={700} c="hsl(240, 100%, 5%)" className="sm:text-6xl xs:text-4xl">
+          <Grid.Col span={{ base: 12, md: 6, xs: 9 }}>
+            <Title fw={700} c="hsl(240, 100%, 5%)" className="sm:text-6xl xs:text-5xl">
               The Bright Future of Web 3.0?
             </Title>
           </Grid.Col>
           <Grid.Col span={{ base: 12, md: 6, xs: 10 }}>
-            <Text size="sm" fw={500} className="leading-6 tracking-wider">
+            <Text size="sm" fw={500} className="leading-6 tracking-wide">
               We dive into the next evolution of the web that claims to put the power of the
               platforms back into the hands of the people. But is it really fulfilling its promise?{" "}
             </Text>
