@@ -4,7 +4,6 @@
   align-items: center;
   padding: 1.5rem 0.5rem;
   position: relative;
-  
 }
 
 .secondaryLink {
@@ -19,7 +18,7 @@
 .primaryItems {
   cursor: pointer;
   color: hsl(236, 13%, 42%);
-} 
+}
 
 .primaryItems:hover {
   color: hsl(5, 85%, 63%);

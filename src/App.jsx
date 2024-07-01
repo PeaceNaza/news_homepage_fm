@@ -5,8 +5,6 @@ import { Body } from "./components/Body";
 import Gadgets from "./components/layouts/Gadgets";
 
 const App = () => {
-  
-  
   return (
     <MantineProvider withGlobalStyles withNormalCSS>
       <Container fluid className="px-5 pb-20 md:px-20">

@@ -18,8 +18,8 @@ export const Body = () => {
   ];
 
   return (
-    <Grid span={12} my={{base: 10, md: 20}} px={{md: 18}} gutter={40} grow>
-      <Grid.Col Grid span={{ base: 12, md: 8 , xs: 9}}>
+    <Grid span={12} my={{ base: 10, md: 20 }} px={{ md: 18 }} gutter={40} grow>
+      <Grid.Col Grid span={{ base: 12, md: 8, xs: 9 }}>
         <Image src={web} alt="web-3 desktop" className="md:block xs:hidden" />
         <Image src={webMobile} alt="web-3 mobile" className="md:hidden" />
         <Grid mt={30}>
@@ -28,7 +28,7 @@ export const Body = () => {
               The Bright Future of Web 3.0?
             </Title>
           </Grid.Col>
-          <Grid.Col span={{ base: 12, md: 6, xs: 10}}>
+          <Grid.Col span={{ base: 12, md: 6, xs: 10 }}>
             <Text size="sm" fw={500} className="leading-6 tracking-wider">
               We dive into the next evolution of the web that claims to put the power of the
               platforms back into the hands of the people. But is it really fulfilling its promise?{" "}
@@ -40,7 +40,7 @@ export const Body = () => {
         </Grid>
       </Grid.Col>
 
-      <Grid.Col span={3.5} bg="hsl(240, 100%, 5%)" mx={{base: 17 , md: 2}} px={20} mt={20} mb={35}>
+      <Grid.Col span={3.5} bg="hsl(240, 100%, 5%)" mx={{ base: 17, md: 2 }} px={20} mt={20} mb={35}>
         <Title c="#E9AB53">New</Title>
 
         {textContent.map((item, index) => (
