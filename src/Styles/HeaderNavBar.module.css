@@ -15,11 +15,13 @@
   text-decoration-line: none;
 }
 
-.primaryItems {
+.mobileItems {
   cursor: pointer;
   color: hsl(236, 13%, 42%);
+  font-weight: 500;
+  line-height: 45px;
 }
 
-.primaryItems:hover {
+.mobileItems:hover {
   color: hsl(5, 85%, 63%);
 }

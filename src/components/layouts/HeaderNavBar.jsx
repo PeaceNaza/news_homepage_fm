@@ -16,8 +16,8 @@ const userLinks = [
 const HeaderNavBar = () => {
   const [opened, { toggle }] = useDisclosure(false);
 
-  const primaryItems = userLinks.map((item) => (
-    <Text href={item.link} key={item.label} className={classes.primaryItems}>
+  const mobileItems = userLinks.map((item) => (
+    <Text href={item.link} key={item.label} className={classes.mobileItems}>
       {item.label}
     </Text>
   ));
@@ -78,6 +78,7 @@ const HeaderNavBar = () => {
           }}
         >
           <Box
+              
             style={{
               position: "fixed",
               top: 0,
@@ -91,9 +92,10 @@ const HeaderNavBar = () => {
               background: "white",
               zIndex: 20,
               padding: "20px",
+             
             }}
           >
-            {primaryItems}
+            {mobileItems}
           </Box>
         </Overlay>
       )}
