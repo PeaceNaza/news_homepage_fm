@@ -83,7 +83,7 @@ const HeaderNavBar = () => {
               position: "fixed",
               top: 0,
               right: 0,
-              width: "70%",
+              width: "63%",
               height: "100%",
               display: "flex",
               flexDirection: "column",
