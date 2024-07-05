@@ -32,7 +32,7 @@ const HeaderNavBar = () => {
     <Container fluid mt={{ base: 10, md: 30 }} className={classes.inner}>
       <Image src={Logo} w={{ base: 60, md: 55 }} ml={{ base: -10, md: 2 }} />
       <Box className={classes.links} visibleFrom="md">
-        <Group justify="flex-end" gap={30}>
+        <Group justify="flex-end" gap={34}>
           {secondaryItems}
         </Group>
       </Box>

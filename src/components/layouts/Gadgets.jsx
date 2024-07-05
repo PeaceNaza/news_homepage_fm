@@ -26,12 +26,12 @@ const Gadgets = () => {
   ];
 
   return (
-    <Grid span={12} ml={{ md: "md" }}>
+    <Grid mt={40} span={12} ml={{ md: "md" }}>
       {gadgetsContent.map((content, index) => (
-        <Grid.Col key={index} span={{ base: 12, lg: 4, md: 6 }}>
-          <Grid gutter={30}>
+        <Grid.Col key={index} span={{ base: 12, lg: 4, md: 6 }} style={{display: "block", unicodeBidi: "isolate"}}>
+          <Grid gutter={30} >
             <Grid.Col span={{ base: 4, md: 3, lg: 3.7, xs: 2.7 }}>{content.image}</Grid.Col>
-            <Grid.Col span={{ base: 8, md: 7, xs: 5.5 }}>
+            <Grid.Col span={{ base: 8, md: 7, xs: 5.5 }} >
               <Title fw={700} size={25} c="#F15E50" className="leading-6">
                 {content.num}
               </Title>
